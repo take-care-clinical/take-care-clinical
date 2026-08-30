@@ -279,6 +279,7 @@ h3 { font-size: clamp(1.45rem, 3vw, 2.1rem); }
 
 .section { padding-block: clamp(4rem, 8vw, 7rem); }
 .section.alt { background: var(--surface-warm); }
+.compact-section { padding-block: clamp(3rem, 6vw, 5rem); }
 
 .section-header {
   max-width: 760px;
