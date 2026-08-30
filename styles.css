@@ -422,6 +422,51 @@ h3 { font-size: clamp(1.45rem, 3vw, 2.1rem); }
   font-weight: 800;
 }
 
+.contact-form {
+  display: grid;
+  gap: 0.75rem;
+  margin-block: 1.5rem;
+}
+
+.contact-form label {
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgba(15, 107, 95, 0.24);
+  border-radius: 14px;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+}
+
+.contact-form textarea { resize: vertical; }
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 3px solid rgba(216, 168, 94, 0.4);
+  border-color: var(--teal);
+}
+
+.contact-form .button {
+  width: fit-content;
+  margin-top: 0.35rem;
+  cursor: pointer;
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.contact-instagram-link {
+  color: var(--teal-dark);
+}
+
 .site-footer {
   padding-block: 3rem;
   color: rgba(255, 255, 255, 0.82);

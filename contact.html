@@ -41,11 +41,32 @@
           <p class="kicker">Contact</p>
           <h1>Contact me</h1>
           <p class="lead">Please include your location, preferred date, and a bit about what kind of treatment you’re looking for.</p>
-          <div class="contact-methods">
-            <a class="button" href="mailto:hello@takecareclinical.com?subject=Appointment%20request%20-%20Take%20Care%20Clinical%20Massage">Email Chelsea</a>
-            <a class="button-outline" href="https://www.instagram.com/takecareclinical?igsh=MWJ1Y3FhcGYzbGZ2MQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener">Message on Instagram</a>
-          </div>
+          <form class="contact-form" action="https://formspree.io/f/mkjngewn" method="POST">
+            <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off">
+            <input type="hidden" name="_subject" value="New appointment request from Take Care Clinical Massage">
+
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+
+            <label for="location">Location</label>
+            <input id="location" name="location" type="text" autocomplete="address-level2">
+
+            <label for="preferred-date">Preferred date</label>
+            <input id="preferred-date" name="preferred_date" type="text">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="button" type="submit">Send Message</button>
+          </form>
           <p><strong>Direct billing:</strong> available.</p>
+          <p><a class="footer-secondary-link contact-instagram-link" href="https://www.instagram.com/takecareclinical?igsh=MWJ1Y3FhcGYzbGZ2MQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener">Message on Instagram</a></p>
         </div>
       </div>
     </section>
