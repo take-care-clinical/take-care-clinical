@@ -228,7 +228,6 @@ p { margin: 0 0 1rem; }
 .contact-form input:focus, .contact-form textarea:focus { border-color: var(--teal); }
 .contact-form .button { width: fit-content; margin-top: 0.35rem; cursor: pointer; }
 .form-honeypot { position: absolute; left: -9999px; }
-.contact-instagram-link { color: var(--teal-dark); }
 
 .site-footer { padding-block: 3rem; color: rgba(255,255,255,0.82); background: var(--teal-dark); }
 .footer-grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem; }
